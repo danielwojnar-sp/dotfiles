@@ -1,0 +1,13 @@
+{
+  "explorer.icon.enableNerdfont": true,
+  "explorer.width": 30,
+  "explorer.previewAction.onHover": false,
+  "explorer.keyMappings.global": {
+    "<cr>": ["expandable?", "expand", "open"],
+    "v": "open:vsplit",
+    "t": "open:tab"
+  },
+  "explorer.file.autoReveal": true,
+  "javascript.suggestionActions.enabled": false,
+  "diagnostic.displayByAle": true
+}
