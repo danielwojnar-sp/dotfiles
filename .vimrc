@@ -19,6 +19,9 @@ set hlsearch
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 
+let g:ale_disable_lsp = 1
+let g:ale_ruby_rubocop_executable = 'bundle'
+
 set rtp+=/usr/local/bin/fzf
 call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdcommenter'
@@ -53,6 +56,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rhubarb'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 call vundle#end()
@@ -244,4 +248,4 @@ if &term =~# '256color' && ( &term =~# '^screen'  || &term =~# '^tmux' )
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
-endif
+e
